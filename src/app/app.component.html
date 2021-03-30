@@ -1,7 +1,11 @@
+<button [ngClass]="buttonStyle" (click)="togglePersonal()">Toggle Personal Info</button>
 <h1>{{title}}</h1>
-<h2>{{name}}</h2>
-<address>{{address}}</address>
-<p>{{phone}}</p>
-<p>{{email}}</p>
+<div *ngIf="showPersonal">
+    <h2>{{name}}</h2>
+    <address>{{address}}</address>
+    <p>{{phone}}</p>
+    <p>{{email}}</p>
+</div>
+
 <app-work-experience></app-work-experience>
 <app-education></app-education>

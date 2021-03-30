@@ -1,5 +1,7 @@
 <h3>School History</h3>
 <ul>
-    <li>{{schools[0].school}}</li>
-    <li>{{schools[1].school}}</li>
+    <li *ngFor="let s of schools">{{s.school}} | {{s.year}}</li>
 </ul>
+
+<h4>Technologies</h4>
+<p *ngFor="let s of skills">{{s}}</p>

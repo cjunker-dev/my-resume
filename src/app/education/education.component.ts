@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
   schools: any[] = [
-    {school: "NKU"},
-    {school: "MAX Technical Training"}
+
+    {school: "MAX Technical Training",
+    year:2021},
+    {school: "NKU Clinical Mental Health Counseling",
+    year:2019},
+    {school: "NKU",
+    year:2017}
   ]
+  skills: string[] = ["Git", "Github", "SQL", "Java", "Spring", "SpringBoot", "OOP"];
   constructor() { }
 
   ngOnInit(): void {
